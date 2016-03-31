@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { TextField } from "./src/";
+import App from "./App";
 
-ReactDOM.render(
-    <div>
-        <TextField />
-    </div>
-, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
+
