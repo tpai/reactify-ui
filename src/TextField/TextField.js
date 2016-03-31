@@ -9,7 +9,7 @@ class TextField extends Component {
     }
     onInputChange(e) {
         const { onChange } = this.props;
-        onChange(e.currentTarget.value);
+        onChange && onChange(e.currentTarget.value);
     }
     render() {
         const {
@@ -18,6 +18,7 @@ class TextField extends Component {
         } = styles;
         const {
             isError,
+            disabled,
             value,
             onChange,
             inputStyle,
@@ -30,7 +31,8 @@ class TextField extends Component {
                 value={value}
                 className={isError ? error : normal}
                 placeholder={placeholder}
-                onChange={this.onInputChange} />
+                onChange={this.onInputChange}
+                disabled={disabled} />
         );
     }
 }
