@@ -1,0 +1,15 @@
+.normal {
+    border-color: #999999;
+    &:focus {
+        border: 1px solid #3AC5C9;
+        box-shadow: none;
+    }
+}
+
+.error {
+    border-color: #E85764;
+    &:focus {
+        border: 1px solid #E85764;
+        box-shadow: none;
+    }
+}
