@@ -1,15 +1,33 @@
+:global {
+    input[type="text"] {
+        color: #666666;
+        font-size: 13px;
+        height: 20px;
+        padding: 5px 10px;
+        outline: none;
+        box-shadow: none;
+        border-radius: 3px;
+        &:disabled {
+            color: #999;
+            background-color: #EEEEEE;
+        }
+    }
+    input[disabled="disabled"] {
+        background: #EEE \9;
+    }
+}
+
 .normal {
-    border-color: #999999;
+    border: 1px solid #999;
     &:focus {
         border: 1px solid #3AC5C9;
-        box-shadow: none;
     }
 }
 
 .error {
-    border-color: #E85764;
+    border: 1px solid #E85764;
+    background-color: #FBE3E4;
     &:focus {
         border: 1px solid #E85764;
-        box-shadow: none;
     }
 }
